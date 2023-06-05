@@ -1,0 +1,93 @@
+.hero {
+    height: 500px;
+    background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') no-repeat center/cover;
+    width: 100%;
+    display: flex;
+    
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(247, 247, 247, 0.9);
+    width: 70%;
+    margin: auto;
+    padding: 20px 0px;
+    border-radius: 25px;
+    box-shadow: rgba(0,0,0,0.9) 0px 8px 24px;
+}
+
+.text,.from,.until {
+    display: flex;
+    flex-direction: column;
+}
+
+.search_btn {
+    display: none;
+}
+
+form label {
+    font-size: 1rem;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+form input {
+    border: none;
+    background: transparent;
+}
+
+form .from, .until {
+    border-left: 2px solid #333;
+    padding-left: 10px;
+}
+
+form .text_input {
+    width: 300px;
+    font-size: 1rem;
+}
+
+form input:focus{
+    outline: none;
+}
+
+@media screen and (max-width:780px){
+    .form {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .text, .from, .until {
+        width: 100%; 
+    }
+
+    form .from, .until{
+        border-left: none;
+        padding: 0;
+    }
+
+    .border {
+        border-top: 2px solid #333;
+        padding-bottom: 20px;
+    }
+
+    .search_icon {
+        display: none;
+    }
+
+    .search {
+        width: 100%;
+    }
+    .search_btn {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #5e6472;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+    }
+
+}
