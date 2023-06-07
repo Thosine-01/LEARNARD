@@ -1,50 +1,78 @@
 .hero {
-    height: 88vh;
-    width: 100%;   
+    width: 100%;
+    height: 90vh;
+    background: url('../../images/study-group-african-people\ \(2\).jpg');
+    background-repeat: 'no-repeat';
+    background-position: 'center';
+    background-size: '100% 100%';
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    width: 100%;
+    height: 90vh;
+    background: #000;
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+
 }
 
 .hero_container {
     width: 100%;
     max-width: 80%;
-    margin: auto ;
-    display: flex;
-    justify-content: space-between;
+    margin: auto;
 }
-
-
 
 .hero_text {
-    width: 500px;
+    z-index: 9999;
+    position: relative;
+    color: #fff;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.hero_header {
+    width: 80%;
+    margin: auto;
+    font-size: 45px;
+}
+
+.hero_h4 {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.hero_p {
+    width: 50%;  
+    font-size: 14px;
+    margin: 10px auto;
+    line-height: 1.2rem;
+}
+
+.hero_btn {
     display: flex;
-    flex-direction: column;
-    margin-top: 180px;
-}
-
-.hero_text h1 {
-    font-size: 35px;
-}
-
-.hero_text p {
-    font-size: 18px;
-    margin: 20px 0 30px 0;
+    width: 30%;
+    margin:30px auto;
+    justify-content: space-between;
 }
 
 .btn_login {
     background-color: #fa7921;
-    padding: 13px 35px;
+    padding: 10px 30px;
     border-radius: 7px;
     color: aliceblue;
 }
 
 .btn_sign {
     background-color: #f5f5f5;
-    padding: 13px 35px;
+    padding: 10px 30px;
     border-radius: 7px;
     color: #000;
 }
 
-.hero_btn {
-    width: 250px;
-    display: flex;
-    justify-content: space-between;
-}
+
+
+

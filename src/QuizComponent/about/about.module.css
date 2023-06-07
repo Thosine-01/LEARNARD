@@ -1,22 +1,22 @@
 .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.about_imagecontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    
-   
+    max-width: 80%;
+    margin: 70px auto;
+
 }
 
 .about_image {
-    width: 100%;
-    height: 600px;
+    width: 40%;
+    height: 500px;
+    border-radius: 15px;
 }
 
 .about_text {
-    padding: 25px;
-    margin-top: 70px;
+    width: 50%;
+    
 }
 
 .about_text h1 {
@@ -25,43 +25,55 @@
 
 .about_text p {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .about_bold {
     font-weight: 700;
 }
 
-.about_flex {
+.about_box_container {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto 70px auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
-    width: 90%;
+    
 }
 
-.aboutInstuctImg {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 5px solid #FFE785;
+.about_box1 {
+    width: 350px;
+    height: 250px;
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 7px;
 }
 
-.about_imageContainer{
-    display: flex;
-    align-items: center;
+.about_box {
+    width: 350px;
+    height: 250px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 7px;
 }
 
-.aboutflexText {
-    margin-left: 20px;
+.about_box h1 {
+    font-size: 25px;
+    margin: 10px 0 10px 0;
 }
 
-.aboutflexText h3 {
-    font-size: 18px;
-    font-weight: 700;
+.about_box1 h1 {
+    font-size: 25px;
+    margin: 10px 0 10px 0;
+    
 }
 
-.aboutflexText p {
-    font-size: 15px;
-    font-weight: 400;
+.about_box:hover {
+    background: #f4f4f4;
 }
+
+.about_box1:hover {
+    background: #fff;
+}
+
+

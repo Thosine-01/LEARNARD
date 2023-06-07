@@ -1,21 +1,12 @@
 .contactHero {
-    background: url('https://plus.unsplash.com/premium_photo-1664472734080-b702af549b0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1595&q=80') no-repeat center/cover;
+    background:#e26e21;
     width: 100%;
-    height: 100vh;
+    padding: 100px 0 100px 0;
     color: #fff;
     position: relative;
 }
 
-.contactHero::after {
-    content: '';
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: black;
-    opacity:0.7;
-}
+
 
 .contactHero div {
     position: relative;
@@ -26,8 +17,8 @@
     width: 70%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
+    
 }
 
 .contactHeader h2 {

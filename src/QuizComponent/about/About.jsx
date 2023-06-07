@@ -1,38 +1,44 @@
 import React from 'react'
-import aboutImg from '../../images/aboutimg.avif'
-import MaleInstruct from '../../images/handsome-young-businessman-suit.jpg'
-import FemaleInstruct from '../../images/businesswoman-executive-professional-success-concept.jpg'
+import aboutImg from '../../images/front-view-academic-cap-with-books-pencils.jpg'
+import icon1 from '../../images/leader.png'
+import icon2 from '../../images/online-learning.png'
+import icon3 from '../../images/badge.png'
 import styles from '../about/about.module.css'
 
 export default function About() {
   return (
+    <div className={styles.about_section}>
     <div className={styles.about}>
-        <div className={styles.about_imagecontainer}>
+        
             <img src={aboutImg} alt="" className={styles.about_image}/>
-        </div>
+        
         <div className={styles.about_text}>
-            <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis distinctio nesciunt ullam magni laborum maxime aut architecto veritatis aspernatur porro?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, unde dignissimos sunt incidunt repellat nulla dolor dolorem magni ut obcaecati nobis, perspiciatis dicta accusamus non porro, aliquam repudiandae recusandae facilis vitae velit? Iure, quasi suscipit!</p>
+            <h1>A Few Word About Us</h1>
+                <p className={styles.about_p}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis distinctio nesciunt ullam magni laborum maxime aut architecto veritatis aspernatur porro?</p>
+                <p className={styles.about_p}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim officiis ab, excepturi iure rem reiciendis a, laboriosam corporis hic provident sapiente ea veritatis dolore expedita eveniet eum et velit itaque tenetur. Quas necessitatibus perferendis excepturi mollitia, nobis beatae placeat aliquam pariatur cumque provident perspiciatis voluptatibus eaque sequi similique labore quos architecto odio error ad enim libero iusto expedita dolores ipsa. Illo ut, dolore cumque et voluptate accusamus. Debitis, ipsa eligendi vero cumque aspernatur quis suscipit. Quasi odit accusamus quod atque.</p>
                 <p className={styles.about_bold}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, numquam?</p>
-                <div className={styles.about_flex}>
-                    <div className={styles.about_imageContainer}>
-                        <img src={MaleInstruct} alt="" className={styles.aboutInstuctImg}/>
-                        <div className={styles.aboutflexText}>
-                            <h3>Lawal Thomson</h3>
-                            <p>Lead Insturctor</p>
-                        </div>
-                    </div>
-                    <div className={styles.about_imageContainer}>
-                        <img src={FemaleInstruct} alt="" className={styles.aboutInstuctImg}/>
-                        <div className={styles.aboutflexText}>
-                            <h3>Funmi Alade</h3>
-                            <p>Lead Insturctor</p>
-                        </div>
-                    </div>
-                    
-                </div>
         </div>
+    </div>
+    <div>
+        <div className={styles.about_box_container}>
+            <div className={styles.about_box1}>
+                <div><img src={icon1} alt="" /></div>
+                <h1>Best Industry Leaders</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit maxime delectus dolorem, ducimus et accusantium!</p>
+            </div>
+            <div className={styles.about_box}>
+            <div><img src={icon2} alt="" /></div>
+                <h1>Best Industry Leaders</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit maxime delectus dolorem, ducimus et accusantium!</p>
+            </div>
+            <div className={styles.about_box}>
+            <div><img src={icon3} alt="" /></div>
+                <h1>Best Industry Leaders</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit maxime delectus dolorem, ducimus et accusantium!</p>
+            </div>
+        </div>
+    </div>
+        
     </div>
   )
 }
